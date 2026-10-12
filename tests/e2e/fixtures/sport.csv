@@ -1,0 +1,6 @@
+Id,Sport,Type,Place,Level,Day,Class
+1,football,team,outdoor,national,Saturday,yes
+2,hockey,team,outdoor,national,Saturday,yes
+3,gymnastics,individual,indoor,world,Saturday,no
+4,handball,team,indoor,national,Saturday,yes
+5,decathlon,individual,outdoor,world,Sunday,no

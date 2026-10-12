@@ -1,0 +1,145 @@
+{
+  "id": "sport",
+  "name": "Sport",
+  "source": "Course, slides 73–78",
+  "description": "Which sports events are concepts of interest? 3 positive and 2 negative examples, 5 categorical attributes. The final version space has 6 hypotheses.",
+  "attributes": [
+    {
+      "kind": "categorical",
+      "name": "Sport",
+      "values": [
+        "football",
+        "hockey",
+        "gymnastics",
+        "handball",
+        "decathlon"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Type",
+      "values": [
+        "team",
+        "individual"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Place",
+      "values": [
+        "outdoor",
+        "indoor"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Level",
+      "values": [
+        "national",
+        "world"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Day",
+      "values": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "x1",
+      "values": [
+        "football",
+        "team",
+        "outdoor",
+        "national",
+        "Saturday"
+      ],
+      "label": true
+    },
+    {
+      "id": "x2",
+      "values": [
+        "hockey",
+        "team",
+        "outdoor",
+        "national",
+        "Saturday"
+      ],
+      "label": true
+    },
+    {
+      "id": "x3",
+      "values": [
+        "gymnastics",
+        "individual",
+        "indoor",
+        "world",
+        "Saturday"
+      ],
+      "label": false
+    },
+    {
+      "id": "x4",
+      "values": [
+        "handball",
+        "team",
+        "indoor",
+        "national",
+        "Saturday"
+      ],
+      "label": true
+    },
+    {
+      "id": "x5",
+      "values": [
+        "decathlon",
+        "individual",
+        "outdoor",
+        "world",
+        "Sunday"
+      ],
+      "label": false
+    }
+  ],
+  "testInstances": [
+    {
+      "label": "National handball match on Sunday",
+      "values": [
+        "handball",
+        "team",
+        "indoor",
+        "national",
+        "Sunday"
+      ]
+    },
+    {
+      "label": "Hockey world final on Saturday",
+      "values": [
+        "hockey",
+        "team",
+        "outdoor",
+        "world",
+        "Saturday"
+      ]
+    },
+    {
+      "label": "Individual world event on Monday",
+      "values": [
+        "gymnastics",
+        "individual",
+        "indoor",
+        "world",
+        "Monday"
+      ]
+    }
+  ]
+}

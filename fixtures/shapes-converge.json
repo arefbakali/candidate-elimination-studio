@@ -1,0 +1,94 @@
+{
+  "id": "shapes-converge",
+  "name": "Shapes — convergence",
+  "source": "Synthetic",
+  "description": "Target concept \"red circle\". After five examples S and G meet: the concept is learnt exactly (slide 84).",
+  "attributes": [
+    {
+      "kind": "categorical",
+      "name": "Shape",
+      "values": [
+        "circle",
+        "square",
+        "triangle"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Colour",
+      "values": [
+        "red",
+        "green",
+        "blue"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Size",
+      "values": [
+        "small",
+        "large"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Fill",
+      "values": [
+        "solid",
+        "hollow"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "c1",
+      "values": [
+        "circle",
+        "red",
+        "small",
+        "solid"
+      ],
+      "label": true
+    },
+    {
+      "id": "c2",
+      "values": [
+        "square",
+        "green",
+        "large",
+        "hollow"
+      ],
+      "label": false
+    },
+    {
+      "id": "c3",
+      "values": [
+        "circle",
+        "red",
+        "large",
+        "hollow"
+      ],
+      "label": true
+    },
+    {
+      "id": "c4",
+      "values": [
+        "circle",
+        "green",
+        "small",
+        "solid"
+      ],
+      "label": false
+    },
+    {
+      "id": "c5",
+      "values": [
+        "triangle",
+        "red",
+        "small",
+        "solid"
+      ],
+      "label": false
+    }
+  ]
+}

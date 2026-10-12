@@ -1,0 +1,107 @@
+{
+  "id": "enjoysport-noisy",
+  "name": "Noisy EnjoySport",
+  "source": "Course, slide 83 (limits)",
+  "description": "Slide 83: example 2 is labelled negative although the concept is conjunctive. With example 4, G becomes empty and the version space collapses.",
+  "attributes": [
+    {
+      "kind": "categorical",
+      "name": "Sky",
+      "values": [
+        "Sunny",
+        "Cloudy",
+        "Rainy"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Temp",
+      "values": [
+        "Warm",
+        "Cold"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Humidity",
+      "values": [
+        "Normal",
+        "High"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Wind",
+      "values": [
+        "Strong",
+        "Weak"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Water",
+      "values": [
+        "Warm",
+        "Cool"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Forecast",
+      "values": [
+        "Same",
+        "Change"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "d1",
+      "values": [
+        "Sunny",
+        "Warm",
+        "Normal",
+        "Strong",
+        "Warm",
+        "Same"
+      ],
+      "label": true
+    },
+    {
+      "id": "d2",
+      "values": [
+        "Sunny",
+        "Warm",
+        "High",
+        "Strong",
+        "Warm",
+        "Same"
+      ],
+      "label": false
+    },
+    {
+      "id": "d3",
+      "values": [
+        "Rainy",
+        "Cold",
+        "High",
+        "Strong",
+        "Warm",
+        "Change"
+      ],
+      "label": false
+    },
+    {
+      "id": "d4",
+      "values": [
+        "Sunny",
+        "Warm",
+        "High",
+        "Strong",
+        "Cool",
+        "Change"
+      ],
+      "label": true
+    }
+  ]
+}

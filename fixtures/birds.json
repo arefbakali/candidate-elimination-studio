@@ -1,0 +1,165 @@
+{
+  "id": "birds",
+  "name": "Birds",
+  "source": "Course, slides 79–82",
+  "description": "Ducks (+) versus penguins (−). Size is an interval attribute on the integer grid [0, +∞[; neck colour uses the hierarchy warm = {russet, orange}, cold = {grey}.",
+  "attributes": [
+    {
+      "kind": "categorical",
+      "name": "Flat bill",
+      "values": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "kind": "interval",
+      "name": "Size",
+      "min": 0,
+      "max": "inf",
+      "step": 1,
+      "unit": "cm"
+    },
+    {
+      "kind": "categorical",
+      "name": "Neck colour",
+      "values": [
+        "russet",
+        "orange",
+        "grey"
+      ],
+      "hierarchy": [
+        {
+          "name": "warm colour",
+          "members": [
+            "russet",
+            "orange"
+          ]
+        },
+        {
+          "name": "cold colour",
+          "members": [
+            "grey"
+          ]
+        }
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "duck 1",
+      "values": [
+        "True",
+        30,
+        "russet"
+      ],
+      "label": true
+    },
+    {
+      "id": "penguin 1",
+      "values": [
+        "False",
+        70,
+        "grey"
+      ],
+      "label": false
+    },
+    {
+      "id": "duck 2",
+      "values": [
+        "True",
+        40,
+        "orange"
+      ],
+      "label": true
+    },
+    {
+      "id": "penguin 2",
+      "values": [
+        "False",
+        60,
+        "orange"
+      ],
+      "label": false
+    }
+  ],
+  "sampleHypotheses": [
+    {
+      "label": "h1",
+      "h": [
+        {
+          "t": "val",
+          "v": "True"
+        },
+        {
+          "t": "int",
+          "lo": 30,
+          "hi": 55
+        },
+        {
+          "t": "any"
+        }
+      ]
+    },
+    {
+      "label": "h2",
+      "h": [
+        {
+          "t": "val",
+          "v": "True"
+        },
+        {
+          "t": "int",
+          "lo": 0,
+          "hi": 59
+        },
+        {
+          "t": "grp",
+          "g": "warm colour"
+        }
+      ]
+    },
+    {
+      "label": "h3",
+      "h": [
+        {
+          "t": "any"
+        },
+        {
+          "t": "int",
+          "lo": 0,
+          "hi": 42
+        },
+        {
+          "t": "any"
+        }
+      ]
+    }
+  ],
+  "testInstances": [
+    {
+      "label": "Small flat-billed russet bird",
+      "values": [
+        "True",
+        35,
+        "russet"
+      ]
+    },
+    {
+      "label": "Large grey bird without flat bill",
+      "values": [
+        "False",
+        80,
+        "grey"
+      ]
+    },
+    {
+      "label": "Medium orange bird without flat bill",
+      "values": [
+        "False",
+        50,
+        "orange"
+      ]
+    }
+  ]
+}

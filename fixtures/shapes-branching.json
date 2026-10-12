@@ -1,0 +1,74 @@
+{
+  "id": "shapes-branching",
+  "name": "Shapes — wide G boundary",
+  "source": "Synthetic",
+  "description": "One positive and one completely different negative example give a G boundary with four hypotheses; later examples prune it.",
+  "attributes": [
+    {
+      "kind": "categorical",
+      "name": "Shape",
+      "values": [
+        "circle",
+        "square",
+        "triangle"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Colour",
+      "values": [
+        "red",
+        "green",
+        "blue"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Size",
+      "values": [
+        "small",
+        "large"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Fill",
+      "values": [
+        "solid",
+        "hollow"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "s1",
+      "values": [
+        "circle",
+        "red",
+        "small",
+        "solid"
+      ],
+      "label": true
+    },
+    {
+      "id": "s2",
+      "values": [
+        "square",
+        "green",
+        "large",
+        "hollow"
+      ],
+      "label": false
+    },
+    {
+      "id": "s3",
+      "values": [
+        "circle",
+        "red",
+        "large",
+        "solid"
+      ],
+      "label": true
+    }
+  ]
+}

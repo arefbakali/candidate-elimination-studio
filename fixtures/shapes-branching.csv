@@ -1,0 +1,4 @@
+Shape,Colour,Size,Fill,class
+circle,red,small,solid,yes
+square,green,large,hollow,no
+circle,red,large,solid,yes

@@ -1,0 +1,72 @@
+{
+  "id": "contradiction",
+  "name": "Contradictory labels",
+  "source": "Synthetic",
+  "description": "The same instance appears once as positive and once as negative (plus a repeated example). No hypothesis can be consistent: the version space becomes empty.",
+  "attributes": [
+    {
+      "kind": "categorical",
+      "name": "Shape",
+      "values": [
+        "circle",
+        "square",
+        "triangle"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Colour",
+      "values": [
+        "red",
+        "green",
+        "blue"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Size",
+      "values": [
+        "small",
+        "large"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "a",
+      "values": [
+        "circle",
+        "red",
+        "small"
+      ],
+      "label": true
+    },
+    {
+      "id": "a (repeat)",
+      "values": [
+        "circle",
+        "red",
+        "small"
+      ],
+      "label": true
+    },
+    {
+      "id": "b",
+      "values": [
+        "square",
+        "green",
+        "large"
+      ],
+      "label": false
+    },
+    {
+      "id": "a (contradiction)",
+      "values": [
+        "circle",
+        "red",
+        "small"
+      ],
+      "label": false
+    }
+  ]
+}

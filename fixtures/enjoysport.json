@@ -1,0 +1,153 @@
+{
+  "id": "enjoysport",
+  "name": "EnjoySport",
+  "source": "Mitchell (1997), course slides 85–87",
+  "description": "The classic EnjoySport data. It yields the 6-hypothesis version space of slide 85, used on slides 86–87 to classify new days.",
+  "attributes": [
+    {
+      "kind": "categorical",
+      "name": "Sky",
+      "values": [
+        "Sunny",
+        "Cloudy",
+        "Rainy"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Temp",
+      "values": [
+        "Warm",
+        "Cold"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Humidity",
+      "values": [
+        "Normal",
+        "High"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Wind",
+      "values": [
+        "Strong",
+        "Weak"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Water",
+      "values": [
+        "Warm",
+        "Cool"
+      ]
+    },
+    {
+      "kind": "categorical",
+      "name": "Forecast",
+      "values": [
+        "Same",
+        "Change"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "d1",
+      "values": [
+        "Sunny",
+        "Warm",
+        "Normal",
+        "Strong",
+        "Warm",
+        "Same"
+      ],
+      "label": true
+    },
+    {
+      "id": "d2",
+      "values": [
+        "Sunny",
+        "Warm",
+        "High",
+        "Strong",
+        "Warm",
+        "Same"
+      ],
+      "label": true
+    },
+    {
+      "id": "d3",
+      "values": [
+        "Rainy",
+        "Cold",
+        "High",
+        "Strong",
+        "Warm",
+        "Change"
+      ],
+      "label": false
+    },
+    {
+      "id": "d4",
+      "values": [
+        "Sunny",
+        "Warm",
+        "High",
+        "Strong",
+        "Cool",
+        "Change"
+      ],
+      "label": true
+    }
+  ],
+  "testInstances": [
+    {
+      "label": "Slide 86 — A",
+      "values": [
+        "Sunny",
+        "Warm",
+        "Normal",
+        "Strong",
+        "Cool",
+        "Change"
+      ]
+    },
+    {
+      "label": "Slide 87 — B",
+      "values": [
+        "Rainy",
+        "Cold",
+        "Normal",
+        "Weak",
+        "Warm",
+        "Same"
+      ]
+    },
+    {
+      "label": "Slide 87 — C",
+      "values": [
+        "Sunny",
+        "Warm",
+        "Normal",
+        "Weak",
+        "Warm",
+        "Same"
+      ]
+    },
+    {
+      "label": "Slide 87 — D",
+      "values": [
+        "Sunny",
+        "Cold",
+        "Normal",
+        "Strong",
+        "Warm",
+        "Same"
+      ]
+    }
+  ]
+}
