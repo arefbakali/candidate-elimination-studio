@@ -19,7 +19,7 @@ A hypothesis is a conjunction of one constraint per attribute, `h = ⟨c₁, …
 
 Dataset cells are `string | number | null`; `null` is a **missing value**, admitted only by `?`.
 
-### Generality order (slide 68)
+### Generality order 
 
 `h₁ ⪰ h₂ ⇔ cover(h₂) ⊆ cover(h₁)`. For conjunctions this is the product of per-attribute orders:
 
@@ -66,7 +66,7 @@ numbers.
   `x ∉ cover(h)` only requires one attribute to reject. If no attribute can be restricted, `⊥` is the
   only minimal specialisation.
 
-## 3. Candidate Elimination (slide 74)
+## 3. Candidate Elimination 
 
 ```
 G ← {⊤}, S ← {⊥}
@@ -111,7 +111,7 @@ clear message if a boundary exceeds 5 000 hypotheses (G can grow exponentially).
 `⊤` and `⊥` are drawn as dashed anchors outside the version space. Nothing is invented to make the
 picture look like a diamond: the Sport result is a diamond because its version space is one.
 
-## 5. Classification (slides 86–87)
+## 5. Classification 
 
 `classifyWithVersionSpace` returns
 
