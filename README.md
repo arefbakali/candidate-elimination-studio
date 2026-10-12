@@ -2,6 +2,8 @@
 
 ![Candidate Elimination Studio demo](docs/demo.gif)
 
+**🚀 Live demo: [candidate-elimination-studio.vercel.app/studio](https://candidate-elimination-studio.vercel.app/studio)**
+
 An interactive, mathematically exact web application for **Mitchell's Candidate Elimination algorithm**: the **S** and **G** boundaries, every internal operation of the algorithm, and the **version space drawn as its real Hasse diagram**. It includes an exact engine, a step-by-step simulator, a lattice visualisation, classification of new instances, a dataset importer/editor, a guided presentation mode, exports, automated testing and CI.
 
 > **Scope:** The project implements one algorithm only — no other learners and no model comparison. Results depend on the chosen hypothesis language (see [Hypothesis language](#hypothesis-language)).
